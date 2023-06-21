@@ -19,4 +19,16 @@ void shrinkToFit(vector *v);
 
 void deleteVector(vector *v);
 
+int getVectorValue(vector *v, size_t i);
+
+void pushBack(vector *v, int x);
+
+void popBack(vector *v);
+
+void test_pushBack_emptyVector();
+
+void test_pushBack_fullVector();
+
+void test_popBack_notEmptyVector();
+
 #endif
