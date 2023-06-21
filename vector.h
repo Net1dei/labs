@@ -1,9 +1,9 @@
-#ifndef UNTITLED5_VECTOR_H
-#define UNTITLED5_VECTOR_H
+#ifndef UNTITLED4_VECTOR_H
+#define UNTITLED4_VECTOR_H
 
 #include "stdbool.h"
 
-typedef struct vector {
+typedef struct vector{
     int *data;
     size_t size;
     size_t capacity;
@@ -30,5 +30,19 @@ void test_pushBack_emptyVector();
 void test_pushBack_fullVector();
 
 void test_popBack_notEmptyVector();
+
+int* atVector(vector *v, size_t index);
+
+int* back(vector *v);
+
+int* front(vector *v);
+
+void test_atVector_notEmptyVector();
+
+void test_atVector_requestToLastElement();
+
+void test_back_oneElementInVector();
+
+void test_front_oneElementInVector();
 
 #endif
